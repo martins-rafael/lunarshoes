@@ -13,6 +13,27 @@ export const Container = styled.header`
     &:hover {
       opacity: 0.7;
     }
+
+    &:first-of-type {
+      font-weight: bold;
+      font-size: 32px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff; 
+
+      img {
+        margin-left: 16px;  
+      }
+
+      @media(max-width: 768px) {
+        font-size: 20px;
+
+        img {
+          margin-left: 8px;
+          width: 40px; 
+        }
+      }
+    }
   }
 `;
 
@@ -32,7 +53,7 @@ export const Cart = styled(Link)`
 
     span {
       font-size: 12px;
-      color: #999;
+      color: #ccc;
     }
   }
 `;

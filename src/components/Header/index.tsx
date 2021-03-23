@@ -13,6 +13,7 @@ const Header = (): JSX.Element => {
   return (
     <Container>
       <Link to="/">
+        Lunarshoes
         <img src={logo} alt="Rocketshoes" />
       </Link>
 

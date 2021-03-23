@@ -7,6 +7,10 @@ export const ProductList = styled.ul`
   grid-gap: 20px;
   list-style: none;
 
+  @media(max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
   li {
     display: flex;
     flex-direction: column;
@@ -33,7 +37,7 @@ export const ProductList = styled.ul`
     }
 
     button {
-      background: #7159c1;
+      background: #00BEC5;
       color: #fff;
       border: 0;
       border-radius: 4px;
@@ -45,7 +49,7 @@ export const ProductList = styled.ul`
       transition: background 0.2s;
 
       &:hover {
-        background: ${darken(0.06, '#7159c1')};
+        background: ${darken(0.06, '#00BEC5')};
       }
 
       div {
